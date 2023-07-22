@@ -1,0 +1,23 @@
+.dark-grey .wrapper{
+    display: flex;
+   justify-content: space-evenly;
+
+}
+.space{
+    padding-top: 40px;
+}
+
+/*Tablet version */
+@media screen  and (max-width:720px){
+    .space{
+        padding-top: 9990px;
+        display: flex;
+        flex-direction: column ;
+        gap: 80px;
+        align-items: center;
+    }
+    .students{
+        width: 150px;
+    }
+    
+}

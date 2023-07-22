@@ -1,0 +1,118 @@
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1024px;
+    height: 80px;
+    top: 24px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+nav .logo {
+    padding-left: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .red {
+    color: var(--red-color);
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav .menu li a {
+    color: white;
+}
+
+nav .menu li a:hover {
+    color: var(--yellow-color);
+}
+
+nav .menu li {
+    list-style: none;
+    padding-right: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+/* tablet version */
+@media screen and (max-width:1040px) {
+    nav {
+        width: 690px;
+    }
+}
+
+/* smartphone version */
+@media screen and (max-width:720px) {
+    nav .menu {
+        display: none;
+    }
+
+    nav {
+        width: unset;
+        left: 32px;
+        right: 32px;
+        top: 16px
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-container {
+        display: flex;
+        position: fixed;
+        z-index: 600;
+        background: var(--dark-color);
+        left: 0px;
+        right: 0px;
+        padding: 60px 32px;
+        width: 300px;
+        margin-left: auto;
+        transition: all 1200ms ease;
+        transform: translateX(0);
+       opacity: 0.7;
+
+    }
+
+    .mobile-menu-container .menu-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        top: 33px;
+        right: 33px;
+    }
+
+    .mobile-menu-container .menu-items li a {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 20px 0px;
+        display: inline-block;
+    }
+
+    .hide-menu {
+        transform: translateX(100%);
+    }
+}
