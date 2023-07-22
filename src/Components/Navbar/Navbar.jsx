@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className={`mobile-menu-container ${displayMenu ? "hide-menu" : "show-menu"}`}>
+      <div className={`mobile-menu-container ${displayMenu ?  "show-menu":"hide-menu" }`}>
 
         <div className="close-icon" onClick={() => setDisplayMenu(!displayMenu)}>
           <img src={ExitIcon} alt="" />

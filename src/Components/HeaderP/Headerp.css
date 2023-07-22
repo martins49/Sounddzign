@@ -1,7 +1,7 @@
 header {
     min-height: 100vh;
     width: 100%;
-    background-image: url("/src/assets/Rectangle\ 8.png");
+    background-image: url("../../assets/hero-sec-img.png");
     background-size: cover;
     background-position: center;
 }
