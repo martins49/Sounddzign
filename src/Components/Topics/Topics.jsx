@@ -9,7 +9,7 @@ const Topics = () => {
   return (
     <section id="course" className="black">
       <div className="wrapper">
-        <h2>What will you learn?</h2>
+        <h2>What You Will Learn</h2>
         <div className="content-container">
           <ul className='course-list'>
             <li onMouseEnter={()=> setCurrentImage(Reactangle13)}>What are frequencies?</li>
