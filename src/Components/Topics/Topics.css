@@ -38,6 +38,10 @@
     align-items: center;
     padding: 12px;
 }
+#course .course-list li:hover{
+font-weight: bold;
+cursor:default;
+}
 /*tablet version*/
 
 @media screen and (max-width:1040px) {
